@@ -16,15 +16,15 @@
             <!-- 3Dモデルの用意 -->
             <a-assets>
                 <!-- 3Dモデル -->
-                <a-asset-item id="3DModel" src="mikasa2.obj"></a-asset-item>
+                <a-asset-item id="3DModel" src="mikasa.obj"></a-asset-item>
                 <!-- マテリアル -->
-                <a-asset-item id="Material" src="mikasa2.mtl"></a-asset-item>
+                <a-asset-item id="Material" src="mikasa.mtl"></a-asset-item>
             </a-assets>
             <!-- マーカー登録(デフォルトで用意されている『Hiro』マーカー) -->
-            <a-marker preset='pattern' url='WebAR/pattern.patt'>
+            <a-marker preset='pattern' src='pattern.patt'>
                 <!-- マーカーの位置に3Dモデルを配置 サイズと場所を指定-->
                 <a-obj-model src="#3DModel"
-                             mtl="#Material"　position="0 0 0" scale="0.001 0.001 0.001" rotation="0 0 0">
+                             mtl="#Material"　position="0 0 0" scale="0.01 0.01 0.01" rotation="0 0 0">
                 </a-obj-model>
             </a-marker>
             <!-- AR用のカメラ配置 -->
