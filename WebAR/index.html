@@ -19,14 +19,32 @@
                 <a-asset-item id="3DModel" src="mikasa2.obj"></a-asset-item>
                 <!-- マテリアル -->
                 <a-asset-item id="Material" src="mikasa2.mtl"></a-asset-item>
+                <!-- 3Dモデル -->
+                <a-asset-item id="3DModel2" src="mikasa.obj"></a-asset-item>
+                <!-- マテリアル -->
+                <a-asset-item id="Material2" src="mikasa.mtl"></a-asset-item>
             </a-assets>
-            <!-- マーカー登録(デフォルトで用意されている『Hiro』マーカー) -->
+            <!-- マーカー登録-->
             <a-marker preset="hiro">
                 <!-- マーカーの位置に3Dモデルを配置 サイズと場所を指定-->
                 <a-obj-model src="#3DModel"
                              mtl="#Material"　position="0 0 0" scale="0.01 0.01 0.01" rotation="0 0 0">
                 </a-obj-model>
             </a-marker>
+
+            <a-marker type='pattern' url='pattern.patt'>
+              <a-sphere scale=".25 .25 .25" position="0 .5 0" color="#f00">
+                <a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite">
+                </a-animation>
+              </a-sphere>
+            </a-marker>
+
+                <!-- マーカーの位置に3Dモデルを配置 サイズと場所を指定-->
+                <!-- <a-obj-model src="#3DModel2"
+                             mtl="#Material2"　position="0 0 0" scale="0.01 0.01 0.01" rotation="0 0 0">
+                </a-obj-model>
+            </a-marker> -->
+
             <!-- AR用のカメラ配置 -->
             <a-entity camera></a-entity>
         </a-scene>
