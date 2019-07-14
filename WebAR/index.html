@@ -15,17 +15,9 @@
         <a-scene embedded arjs="debugUIEnabled:false;">
             <!-- 3Dモデルの用意 -->
             <a-assets>
-                <!-- 3Dモデル -->
-                <a-asset-item id="3DModel" src="mikasa.obj"></a-asset-item>
-                <!-- マテリアル -->
-                <a-asset-item id="Material" src="mikasa.mtl"></a-asset-item>
-                <!-- 3Dモデル -->
-                <a-asset-item id="3DModel2" src="mikasa2.obj"></a-asset-item>
-                <!-- マテリアル -->
-                <a-asset-item id="Material2" src="mikasa2.mtl"></a-asset-item>
-                <!-- 3Dモデル -->
+                <!-- 3D data -->
                 <a-asset-item id="3DModel3" src="tanipha.obj"></a-asset-item>
-                <!-- マテリアル -->
+                <!-- mtl file -->
                 <a-asset-item id="Material3" src="tanipha.mtl"></a-asset-item>
 
             </a-assets>
@@ -36,18 +28,6 @@
                              mtl="#Material3"　position="0 0 0" scale="0.01 0.01 0.01" rotation="0 0 0">
                 </a-obj-model>
             </a-marker>
-
-            <a-marker preset='kanji'>
-                <a-obj-model src="#3DModel2"
-                           mtl="#Material2"　position="0 0 0" scale="0.01 0.01 0.01" rotation="0 0 0">
-                </a-obj-model>
-            </a-marker>
-
-                <!-- マーカーの位置に3Dモデルを配置 サイズと場所を指定-->
-                <!-- <a-obj-model src="#3DModel2"
-                             mtl="#Material2"　position="0 0 0" scale="0.01 0.01 0.01" rotation="0 0 0">
-                </a-obj-model>
-            </a-marker> -->
 
             <!-- AR用のカメラ配置 -->
             <a-entity camera></a-entity>
