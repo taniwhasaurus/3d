@@ -6,7 +6,7 @@
         <title>WebAR</title>
     </head>
     <body style="margin:0px; overflow:hidden;">
-        <!-- 新規追加 ここから-->
+
         <!-- AFrameライブラリ読み込み -->
         <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
         <!-- AR.jsライブラリ読み込み -->
@@ -21,11 +21,11 @@
                 <a-asset-item id="Material3" src="tanipha.mtl"></a-asset-item>
 
             </a-assets>
-            <!-- マーカー登録-->
+            <!-- マーカー　-->
             <a-marker preset="hiro">
-                <!-- マーカーの位置に3Dモデルを配置 サイズと場所を指定-->
+                <!-- 3Dモデルを配置 サイズ　場所-->
                 <a-obj-model src="#3DModel3"
-                             mtl="#Material3"　position="0 -8 0" scale="10 10 10" rotation="0 0 0">
+                             mtl="#Material3"　position="0 -9 0" scale="10 10 10" rotation="0 0 0">
                 </a-obj-model>
             </a-marker>
 
@@ -33,6 +33,6 @@
             <a-entity camera></a-entity>
         </a-scene>
         <!-- A-Frame終了 -->
-        <!--新規追加 ここまで-->
+
     </body>
 </html>
