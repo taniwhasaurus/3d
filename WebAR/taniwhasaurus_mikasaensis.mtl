@@ -1,14 +1,17 @@
-newmtl Taniphasaurus_mikasaensis
-Ka 1.000000 1.000000 1.000000
-Ks 0.000000 0.000000 0.000000
-d 1
-Ns 0.00000
-illum 1
-map_Kd taniwhasaurus_mikasaensis_Taniphasaurus_mikasaensis.png
+newmtl Solid
+Ka 1.0 1.0 1.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+d 1.0
+Ns 0.0
+illum 0
 
-newmtl NO_MATERIAL
-Ka 1.000000 0.000000 0.000000
-Ks 0.000000 0.000000 0.000000
-d 1
-Ns 0.00000
-illum 1
+newmtl taniwhasaurus_mikasaensis
+Ka 1.0 1.0 1.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+d 1.0
+Ns 0.0
+illum 0
+map_Kd taniwhasaurus_mikasaensis.png
+
